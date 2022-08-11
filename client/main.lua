@@ -72,6 +72,10 @@ RegisterCommand("speedzone", function(source, args)
     if not args[1] or not args[2] then
         TriggerEvent('QBCore:Notify', "/speedzone [radius] [limit in kmh]")
     else
+        if not tonumber(args[1]) or not tonumber(args[2]) then
+            TriggerEvent('QBCore:Notify', "You have to enter valid numbers", "error")
+            return
+        end
         gKmh = KMPHtoMPS(tonumber(args[2]))
         
         gPos = GetEntityCoords(PlayerPedId())        
