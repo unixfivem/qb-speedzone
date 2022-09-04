@@ -1,5 +1,5 @@
 # qb-speedzone
-qb-speedzone is a standalone FiveM resource.
+qb-speedzone is a FiveM resource made for QBCore (Notification system only, easily portable). 
 
 ## Description
 
