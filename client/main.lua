@@ -1,6 +1,8 @@
 local SpeedZone = 0
 local affectedPeds = {}
 
+local QBCore = exports['arp-core']:GetCoreObject()
+
 local gRadius
 local gKmh
 local gPos
